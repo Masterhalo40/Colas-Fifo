@@ -1,6 +1,5 @@
 import SimulacionCiclos from './SimulacionCiclos.js';
 import Ciclos from './Ciclos.js';
-
 class Main{
     constructor(){
         this._Actual = null;
