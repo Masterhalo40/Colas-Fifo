@@ -5,7 +5,7 @@ class Main{
     constructor(){
         this._Actual = null;
         document.querySelector('#btnCalcular').addEventListener('click', () => {
-            let SimulacionCiclos = new SimulacionCiclos();
+            let simulacionCiclos = new SimulacionCiclos();
             let contador = 0;
             let contadorFinal = 0;
             let numeroDeProcesos = 1;
@@ -13,7 +13,7 @@ class Main{
             let ciclosRestantes = 0;
 
             for(let i=0;i<300;i++){
-                if(dado.Lanzar()<=39){
+                if(simulacionCiclos.Lanzar()<=39){
                     this.nuevoProceso(new Ciclos('el proceso ' + numeroDeProcesos, Math.trunc(Math.random()*11)+4));
                     console.log('Se ha agregado un proceso');
                     numeroDeProcesos++;
