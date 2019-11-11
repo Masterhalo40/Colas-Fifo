@@ -1,4 +1,4 @@
-export default class Ciclo{
+export default class Ciclos{
     constructor(nombre, numeroCiclos){
         this._nombre = nombre;
         this._numeroCiclos = numeroCiclos;

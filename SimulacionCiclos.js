@@ -1,4 +1,4 @@
-export default class Dado{
+export default class SimulacionCiclos{
     constructor(){
     }
     Lanzar(){

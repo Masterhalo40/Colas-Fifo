@@ -1,11 +1,11 @@
-import Dado from './Dado.js';
-import Ciclo from './Ciclo.js';
+import SimulacionCiclos from './SimulacionCiclos.js';
+import Ciclos from './Ciclos.js';
 
 class Main{
     constructor(){
         this._Actual = null;
         document.querySelector('#btnCalcular').addEventListener('click', () => {
-            let dado = new Dado();
+            let SimulacionCiclos = new SimulacionCiclos();
             let contador = 0;
             let contadorFinal = 0;
             let numeroDeProcesos = 1;
@@ -14,7 +14,7 @@ class Main{
 
             for(let i=0;i<300;i++){
                 if(dado.Lanzar()<=39){
-                    this.nuevoProceso(new Ciclo('el proceso ' + numeroDeProcesos, Math.trunc(Math.random()*11)+4));
+                    this.nuevoProceso(new Ciclos('el proceso ' + numeroDeProcesos, Math.trunc(Math.random()*11)+4));
                     console.log('Se ha agregado un proceso');
                     numeroDeProcesos++;
                 }
